@@ -4,7 +4,6 @@ import Dashboard from "./dashboard";
 import { Switch, Route } from "react-router-dom";
 import { BrowserRouter as Router } from "react-router-dom";
 
-
 function App() {
   return (
     <Router>
@@ -12,7 +11,7 @@ function App() {
         <Route exact path="/">
           <Login />
         </Route>
-        <Route exact path="/dashboard">
+        <Route path="/dashboard">
           <Dashboard />
         </Route>
       </Switch>

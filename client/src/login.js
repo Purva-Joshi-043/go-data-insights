@@ -167,7 +167,7 @@ export default function Login() {
       } else {
         setInvalidEmail2("");
         axios
-          .post("http://go-data-insights.herokuapp.com/api/register/", ob)
+          .post("https://go-data-insights.herokuapp.com/api/register/", ob)
           .then(function (response) {
             // handle success
 
@@ -201,7 +201,7 @@ export default function Login() {
     console.log(password);
     const ob = { email: email, password: password };
     axios
-      .post("http://go-data-insights.herokuapp.com/api/login/", ob)
+      .post("https://go-data-insights.herokuapp.com/api/login/", ob)
       .then(function (response) {
         // handle success
         localStorage.setItem("token", response.data.access_token);
