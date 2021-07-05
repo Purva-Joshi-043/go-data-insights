@@ -26,7 +26,7 @@ import { useHistory } from "react-router-dom";
 import OutlinedInput from "@material-ui/core/OutlinedInput";
 import InputLabel from "@material-ui/core/InputLabel";
 import "./index.css";
-import Navbar from "./navbar"
+import Navbar from "./navbar";
 
 function Copyright() {
   return (
@@ -167,7 +167,7 @@ export default function Login() {
       } else {
         setInvalidEmail2("");
         axios
-          .post("http://127.0.0.1:5000/api/register/", ob)
+          .post("http://go-data-insights.herokuapp.com/api/register/", ob)
           .then(function (response) {
             // handle success
 
@@ -201,7 +201,7 @@ export default function Login() {
     console.log(password);
     const ob = { email: email, password: password };
     axios
-      .post("http://127.0.0.1:5000/api/login/", ob)
+      .post("http://go-data-insights.herokuapp.com/api/login/", ob)
       .then(function (response) {
         // handle success
         localStorage.setItem("token", response.data.access_token);
@@ -220,7 +220,7 @@ export default function Login() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Navbar/>
+      <Navbar />
       <Grid component="main" className="root">
         <Grid className="image">
           <img
@@ -237,7 +237,7 @@ export default function Login() {
             <Typography
               component="h1"
               variant="h5"
-              style={{ marginTop: "-20px"}}
+              style={{ marginTop: "-20px" }}
               className="font"
             >
               Sign in
@@ -408,10 +408,7 @@ export default function Login() {
                           },
                         }}
                       >
-                        <InputLabel
-                          htmlFor="outlined-adornment-password"
-                          
-                        >
+                        <InputLabel htmlFor="outlined-adornment-password">
                           Password
                         </InputLabel>
                         <OutlinedInput

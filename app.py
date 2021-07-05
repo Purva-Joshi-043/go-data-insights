@@ -1,5 +1,5 @@
 import pymongo
-from flask import Flask, jsonify, request
+from flask import Flask,send_from_directory, jsonify, request
 from flask_jwt_extended import JWTManager, jwt_required, create_access_token, get_jwt_identity
 from pymongo import MongoClient
 from flask_bcrypt import Bcrypt
