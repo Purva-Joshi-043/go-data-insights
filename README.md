@@ -5,14 +5,16 @@
 
 ## `UI : `
 
-    > This service is built using the [material-ui framework](https://material-ui.com/).
-    > I have amalgamated vector graphics for better visuals.
-    > This service is compatible accross different devices.
+    > This service is built using the
+
+[material-ui framework](https://material-ui.com/).
+
+> I have amalgamated vector graphics for better visuals. > This service is compatible accross different devices.
 
 ## `Installation`
 
 > Requires python and node.
-> \[python](https://www.python.org/downloads/)
+> Install python using [python](https://www.python.org/downloads/)
 
 1. cd to the root directory where requirements.txt is located.
 2. run: pip install -r requirements.txt
