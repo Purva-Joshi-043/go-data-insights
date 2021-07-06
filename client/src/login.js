@@ -229,7 +229,7 @@ export default function Login() {
             style={{ width: "100%", marginTop: "15%" }}
           />
         </Grid>
-        <Grid className="section2" component={Paper} elevation={6} square>
+        <div className="section2" component={Paper} elevation={6} square>
           <div className={classes.paper}>
             <Avatar className={classes.avatar}>
               <LockOutlinedIcon />
@@ -473,7 +473,7 @@ export default function Login() {
               </Box>
             </form>
           </div>
-        </Grid>
+        </div>
       </Grid>
     </React.Fragment>
   );
