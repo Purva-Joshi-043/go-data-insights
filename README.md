@@ -5,8 +5,7 @@
 
 ## `UI : `
 
-    > This service is built using the
-
+This service is built using the
 [material-ui framework](https://material-ui.com/).
 
 > I have amalgamated vector graphics for better visuals. > This service is compatible accross different devices.
