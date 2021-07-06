@@ -11,8 +11,8 @@
 
 ## `Installation`
 
---> Requires python and node.
-[python](https://www.python.org/downloads/)
+> Requires python and node.
+> \[python](https://www.python.org/downloads/)
 
 1. cd to the root directory where requirements.txt is located.
 2. run: pip install -r requirements.txt
