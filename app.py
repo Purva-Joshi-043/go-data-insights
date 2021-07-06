@@ -25,9 +25,13 @@ app.config["JWT_SECRET_KEY"] = "this-is-secret-key" #change it
 app.config['CORS_HEADERS'] = 'Content-Type'
 
 
-@app.route("/*", defaults={'path':''})
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
 def serve(path):
-    return send_from_directory(app.static_folder,'index.html')
+    if path != "" and os.path.exists(app.static_folder + '/' + path):
+        return send_from_directory(app.static_folder, path)
+    else:
+        return send_from_directory(app.static_folder, 'index.html')
 
 
 @app.route("/api/dashboard/", methods=["GET"])
