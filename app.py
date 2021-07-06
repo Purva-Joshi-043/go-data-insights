@@ -30,7 +30,7 @@ def serve(path):
     return send_from_directory(app.static_folder,'index.html')
 
 
-@app.route("/api/dashboard", methods=["GET"])
+@app.route("/api/dashboard/", methods=["GET"])
 @jwt_required()
 @cross_origin()
 def dasboard():
