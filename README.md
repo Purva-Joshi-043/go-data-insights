@@ -1,13 +1,11 @@
 ## `Go Data Insights : `
 
-    > This service deals with the user authentication with all the input validations in the field of Firstname, Lastname, email, password.
-    > This service is fueled by ReactJS, Flask, MongoDB.
+> This service deals with the user authentication with all the input validations in the field of Firstname, Lastname, email, password.
+> This service is fueled by ReactJS, Flask, MongoDB.
 
 ## `UI : `
 
-This service is built using the
-[material-ui framework](https://material-ui.com/).
-
+> This service is built using the [material-ui framework](https://material-ui.com/).
 > I have amalgamated vector graphics for better visuals. > This service is compatible accross different devices.
 
 ## `Installation`
@@ -29,5 +27,5 @@ This service is built using the
 
 1. In the client directory: `npm run build`
 2. After the build finishes:
-   1. In the root directory: python app.py
+   > In the root directory: python app.py
 3. Go to http://127.0.0.1:5000/ or your domain.
