@@ -31,7 +31,11 @@ function Copyright() {
 }
 export default function Dashboard() {
   const history = useHistory();
-  const handleOnLogout = () => history.push({ pathname: "/" });
+  const handleOnLogout = () => {
+    localStorage.clear("token");
+    history.push({ pathname: "/" });
+    
+  };
   const handleOnTokenNotFound = () => {
     history.push({ pathname: "/" });
   };
@@ -56,7 +60,8 @@ export default function Dashboard() {
         // handle error
         if (
           error.response.data.msg === "Missing Authorization Header" ||
-          error.response.data.msg === "Token has expired"
+          error.response.data.msg === "Token has expired" ||
+          error.response.data.msg === "Not enough segments"
         ) {
           handleOnTokenNotFound();
         }
