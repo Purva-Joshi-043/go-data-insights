@@ -25,7 +25,7 @@ app.config["JWT_SECRET_KEY"] = "this-is-secret-key" #change it
 app.config['CORS_HEADERS'] = 'Content-Type'
 
 
-@app.route("/", defaults={'path':''})
+@app.route("/home/", defaults={'path':''})
 def serve(path):
     return send_from_directory(app.static_folder,'index.html')
 
